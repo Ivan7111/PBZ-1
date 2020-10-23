@@ -1,0 +1,1 @@
+SELECT * FROM StudentGroup WHERE Speciality = 'ЭВМ';
