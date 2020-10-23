@@ -1,0 +1,26 @@
+CREATE DATABASE data2;
+USE data2;
+CREATE TABLE Suppliers (
+	SupplierNumber VARCHAR(30) PRIMARY KEY NOT NULL,
+    SupplierName VARCHAR(30) NOT NULL,
+    SupplierStatus INT NOT NULL,
+    City VARCHAR(30) NOT NULL
+);
+CREATE TABLE Parts (
+	PartNumber VARCHAR(30) PRIMARY KEY NOT NULL,
+    PartName VARCHAR(30) NOT NULL,
+    Colour VARCHAR(30) NOT NULL,
+    Size INT NOT NULL,
+    City VARCHAR(30) NOT NULL
+);
+CREATE TABLE Projects (
+	ProjectNumber VARCHAR(30) PRIMARY KEY NOT NULL,
+    ProjectName VARCHAR(30) NOT NULL,
+    City VARCHAR(30) NOT NULL
+);
+CREATE TABLE PartsBySupplier (
+	SupplierNumber VARCHAR(30) NOT NULL,
+	PartNumber VARCHAR(30) NOT NULL,
+	ProjectNumber VARCHAR(30) NOT NULL,
+	NumberOfParts INT NOT NULL
+);
